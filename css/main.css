@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+
+#game {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8em;
+    height: 12em;
+    background-color: rgb(30,30,30);
+    
+    font-family: "AveriaLibre";
+    color: rgb(200,200,200);
+    font-size: 40px;
+}
+
+#game .screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 10;
+}
+
+#game .screen.active {
+    display: block;
+}
+
+#splash-screen {
+    text-align: center;
+    padding-top: 2.5em;
+}
+
+#splash-screen .continue {
+    cursor: pointer;
+    font-size: 0.75em;
+}
+
+.logo {
+    font-family: "Fredericka the Great";
+    font-size: 1.5em;
+    line-height: 0.9em;
+    margin: 0;
+    text-align: center;
+    color: rgb(70,120,20);
+    text-shadow: 0.03em 0.03em 0.03em rgb(255,255,0),
+                 -0.03em -0.03em 0.03em rgb(255,255,0),
+                 0.10em 0.15em 0.15em rgb(0,0,0);
+}
+
+/* Main menu styles */
+#main-menu {
+    padding-top : 1em;
+}
+
+ul.menu {
+    text-align : center;
+    padding : 0;
+    margin : 0;
+    list-style : none;
+}
+
+ul.menu li {
+    margin : 0.8em 0;
+}
+ul.menu li button {
+    font-family : "Fredericka the Great", sans-serif;
+    font-size : 0.6em;
+    color : rgb(100,120,0);
+    width : 10em;
+    height : 1.5em;
+    background : rgb(10,20,0);
+    border : 0.1em solid rgb(255,255,0);
+    border-radius : 0.5em;
+    -webkit-box-shadow : 0.2em 0.2em 0.3em rgb(0,0,0);
+    -moz-box-shadow : 0.2em 0.2em 0.3em rgb(0,0,0);
+    box-shadow : 0.2em 0.2em 0.3em rgb(0,0,0);
+}
+ul.menu li button:hover {
+    background : rgb(30,40,0);
+}
+
+ul.menu li button:active {
+    color : rgb(255,255,0);
+    background : rgb(30,40,0);
+}

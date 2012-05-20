@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Catch It! Game</title>
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fontfaces.css" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-device-width: 768px) and (orientation: portrait),
+                                                        screen and (max-device-width: 1024px) and (orientation: landscape)" />
+    
+    <script src="utils/modernizr.js"></script>
+    <script src="js/loader.js"></script>
+</head>
+
+<body>
+    <div id="game">
+        <div class="screen" id="splash-screen">
+            <h1 class="logo">Catch It!</h1>
+            <br />
+            <span>Click to continue...</span>
+        </div>
+        <div class="screen" id="main-menu">
+            <h2 class="logo">Catch It!</h2>
+            <ul class="menu">
+                <li><button name="game-screen">Play</button></li>
+                <li><button name="high-scores">High Scores</button></li>
+                <li><button name="settings">Settings</button></li>
+                <li><button name="exit-screen">Exit</button></li>
+            </ul>
+        </div>
+        <div class="screen" id="game-screen"></div>
+        <div class="screen" id="high-scores"></div>
+        <div class="screen" id="settings"></div>
+    </div> <!-- #game -->
+</body>
+</html>
