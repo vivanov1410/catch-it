@@ -5,7 +5,7 @@ catchit.screens["main-menu"] = (function() {
     function setUp() {
         $("#main-menu ul.menu").on("click", function(e) {
             if (e.target.nodeName.toLowerCase() === "button") {
-                var action = e.target.getAttributes("name");
+                var action = e.target.getAttribute("name");
                 game.showScreen(action);
             }
         });

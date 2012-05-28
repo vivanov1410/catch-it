@@ -19,6 +19,9 @@
 
 <body>
     <div id="game">
+        <div class="background">
+            <canvas id="bg"></canvas>
+        </div>
         <div class="screen" id="splash-screen">
             <h1 class="logo">Catch It!</h1>
             <br />
@@ -33,7 +36,11 @@
                 <li><button name="exit-screen">Exit</button></li>
             </ul>
         </div>
-        <div class="screen" id="game-screen"></div>
+        <div class="screen" id="game-screen">
+            <canvas id="game-canvas"></canvas>
+            <br />Score: <span id="score">0</span>
+            <br />Max Score: <span id="max-score">0</span>
+        </div>
         <div class="screen" id="high-scores"></div>
         <div class="screen" id="settings"></div>
     </div> <!-- #game -->

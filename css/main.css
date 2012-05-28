@@ -85,3 +85,17 @@ ul.menu li button:active {
     color : rgb(255,255,0);
     background : rgb(30,40,0);
 }
+
+#game .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#game .background canvas {
+    width: 100%;
+    height: 100%;
+}

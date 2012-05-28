@@ -4,7 +4,7 @@ var catchit = {
         difficulty: "normal",
         baseScore: 10
     }
-    };
+};
 
 // wait until main document is loaded
 window.addEventListener("load", function() {
@@ -19,11 +19,14 @@ window.addEventListener("load", function() {
         load: [
             "utils/jquery.js",
             "js/game.js",
+            "js/logic.js",
             "js/screen.splash.js",
-            "js/screen.main-menu.js"
+            "js/screen.main-menu.js",
+            "js/game-screen.js"
         ],
         // call when all files have finished loading and executing
         complete: function() {
+            catchit.game.setup();
             console.log("All files loaded!");
             
             // show a first screen
@@ -37,7 +40,7 @@ window.addEventListener("load", function() {
         Modernizr.load([{
             load: [
                 "js/screen.main-menu.js",
-                "js/model.js"
+                "js/logic.js"
             ]
         }]);
     }
